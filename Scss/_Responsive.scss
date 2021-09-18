@@ -1,0 +1,149 @@
+
+/*****************
+Estilos Mobile
+*****************/
+
+// HEADER
+
+@media (max-width: 1050px) {
+    header{
+        .logo{
+            width: 100px;
+            height: 50px;
+        }
+        .buscador input[type="search"]{
+            width: 380px;
+            font-size: 12px;
+        }
+        .buscador input[type="submit"]{
+            width: 120px;
+            top: 2px;
+        }
+        .redes{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        .logo{
+            width: 70px;
+            height: 40px;
+        }
+        .buscador input[type="search"]{
+            width: 180px;
+            font-size: 12px;
+            border-radius: 30px 30px 30px 30px;
+        }
+        .buscador input[type="submit"]{
+            display: none;
+        }
+    }
+}
+
+// MAIN INDEX
+
+@media (max-width: 768px) {
+    .mainIndex{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        aside{
+            margin-top: 75px;
+            div{
+                margin-top: 0px;
+                margin-bottom: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .mainIndex{
+        aside{
+            margin: 0%;
+            justify-content: space-around;
+            div{
+                transform: scale(0.55);
+            }
+        }
+    }
+}
+
+// MENU INDEX
+
+@media (max-width: 768px) {
+    .menu{
+        width: 100%;
+        background-color: #e90303;
+        min-height: 200px;
+        ul{
+            flex-direction: column;
+            li{
+                border-bottom: 1px solid white;
+                border-right: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .secProducts div{
+        grid-template-columns: auto;
+    }
+}
+
+// FOOTER
+
+@media (max-width: 768px) {
+    footer{
+        ul{
+            padding-left: 0%;
+            li{
+                font-size: 12px;
+                transform: scale(0.7);
+            }
+        }
+        .divFooter1 h4{
+            font-size: 12px;
+        }
+        .redes2{
+            transform: scale(0.7);
+            a{
+                margin-right: 0%;
+            }
+            h3{
+                font-size: 12px;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+// FORMULARIOS
+
+@media (max-width: 768px) {
+    .formAcceso{
+        p{
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainAyuda{
+        display: grid;
+        grid-template-columns: 100%;
+        .formContact{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .quienesSomos{
+        width: 80%;
+    }
+}

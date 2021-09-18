@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F1F1F1;
+  font-family: 'Open Sans', Arial, sans-serif; }
+
+/*****************
+CABECERA
+*****************/
+header {
+  background-image: linear-gradient(315deg, #1c1f20 0%, #000000 74%);
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  align-items: center; }
+  header .buscador input[type="search"] {
+    width: 500px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px 0 0 30px; }
+  header .buscador input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #e90303;
+    position: relative;
+    border-radius: 0 30px 30px 0;
+    left: -5px;
+    top: -1px; }
+  header .redes {
+    display: grid;
+    grid-template-columns: auto auto; }
+    header .redes a {
+      margin-right: 15px; }
+  header .inicio {
+    margin-top: 0; }
+  header .inicio:hover {
+    background-color: transparent; }
+  header .logo {
+    height: 85px;
+    width: 200px; }
+  header .face {
+    height: 50px;
+    width: 50px; }
+  header .face0:hover {
+    background-color: transparent; }
+  header .insta {
+    height: 50px;
+    width: 50px; }
+  header .insta0:hover {
+    background-color: transparent; }
+  header .acc {
+    text-decoration: none;
+    color: white; }
+  header .acc:hover {
+    background-color: #860101;
+    transition: 0.3s;
+    border-radius: 10%; }
+
+/*****************
+MENU
+*****************/
+.menu {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e90303;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center; }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+    .menu ul li {
+      list-style: none;
+      border-right: 1px solid white; }
+      .menu ul li a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: white;
+        padding: 8px 8px; }
+    .menu ul li a:hover {
+      background-color: #860101;
+      transition: 0.3s;
+      border-radius: 10%; }
+
+/*****************
+MAIN INDEX
+*****************/
+main {
+  min-height: 800px; }
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .mainIndex .carrousel {
+    background-color: #000000; }
+  .mainIndex h3 {
+    background-color: #000000;
+    text-align: center;
+    color: #e90303; }
+  .mainIndex aside div {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center; }
+    .mainIndex aside div .aAside {
+      margin-top: 30px; }
+    .mainIndex aside div .aAside:hover {
+      background-color: white;
+      transform: scale(1.1);
+      transition: 0.3s;
+      border-radius: 50%; }
+
+/*****************
+FOOTER
+*****************/
+footer {
+  height: auto;
+  background-image: linear-gradient(315deg, #1c1f20 0%, #000000 74%);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: black;
+  border-style: solid;
+  border-top-color: red;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between; }
+  footer ul {
+    display: grid;
+    align-items: center;
+    margin-left: 5px;
+    list-style: none; }
+    footer ul li {
+      list-style: none;
+      text-decoration: none; }
+      footer ul li .accF {
+        text-decoration: none;
+        color: white;
+        padding: 8px; }
+      footer ul li .accF:hover {
+        background-color: #860101;
+        transition: 0.3s;
+        border-radius: 10%; }
+  footer h3 {
+    color: white; }
+  footer h4 {
+    color: white; }
+  footer .divFooter1 {
+    display: grid;
+    align-items: center; }
+  footer .redes2 {
+    display: grid;
+    grid-template-areas: 'titulo titulo titulo' 'redes redes redes'; }
+    footer .redes2 a {
+      margin-right: 15px; }
+  footer .redes2 h3 {
+    margin-right: 15px;
+    grid-area: titulo;
+    text-align: center; }
+  footer .face {
+    height: 50px;
+    width: 50px; }
+  footer .face0:hover {
+    background-color: transparent; }
+  footer .insta {
+    height: 50px;
+    width: 50px; }
+  footer .insta0:hover {
+    background-color: transparent; }
+  footer .youtu {
+    width: 50px;
+    height: 50px; }
+  footer .youtu0:hover {
+    background-color: transparent; }
+
+/*****************
+PRODUCTOS
+*****************/
+.mainProducts {
+  text-align: center; }
+
+.secProducts div {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto; }
+  .secProducts div .aProduct {
+    margin-top: 15px; }
+  .secProducts div a {
+    text-decoration: none; }
+    .secProducts div a p {
+      color: black;
+      font-size: 18px;
+      font-weight: bold; }
+  .secProducts div a:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    border-radius: 3%; }
+
+/*****************
+FORMULARIOS REGISTO-ACCESO
+*****************/
+.formAcceso {
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+  background: #e90303;
+  padding: 30px;
+  border-radius: 5px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  box-shadow: 5px 10px 25px black; }
+  .formAcceso h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; }
+  .formAcceso p {
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 40px; }
+    .formAcceso p a {
+      color: white; }
+  .formAcceso a:hover {
+    text-decoration: underline; }
+  .formAcceso .botons {
+    width: 100%;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 16px 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    cursor: pointer; }
+  .formAcceso .controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #e90303;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px; }
+  .formAcceso .mainAcc div {
+    margin: auto;
+    margin-top: 200px;
+    width: 50%; }
+
+/*****************
+FORMULARIO CONTACTO
+*****************/
+.formContact {
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+  background: #e90303;
+  padding: 30px;
+  border-radius: 5px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  box-shadow: 5px 10px 25px black; }
+  .formContact h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px; }
+  .formContact .botons {
+    width: 100%;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 16px 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    cursor: pointer; }
+  .formContact .controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #e90303;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px; }
+
+.mainAyuda {
+  display: grid;
+  grid-template-columns: auto auto; }
+  .mainAyuda .ayudaPreg {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    background: #e90303;
+    padding: 30px;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-shadow: 5px 10px 25px black; }
+    .mainAyuda .ayudaPreg h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px; }
+    .mainAyuda .ayudaPreg ul {
+      list-style: none; }
+      .mainAyuda .ayudaPreg ul li {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center; }
+        .mainAyuda .ayudaPreg ul li a {
+          text-decoration: none;
+          color: white;
+          padding: 8px; }
+
+/*****************
+Quienes somos
+*****************/
+.quienesSomos {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  background: #e90303;
+  padding: 30px;
+  border-radius: 5px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  box-shadow: 5px 10px 25px black;
+  text-align: center; }
+  .quienesSomos h1 {
+    color: white;
+    margin-bottom: 30px; }
+  .quienesSomos p {
+    margin-top: 3%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6; }
+
+/*****************
+Estilos Mobile
+*****************/
+@media (max-width: 1050px) {
+  header .logo {
+    width: 100px;
+    height: 50px; }
+  header .buscador input[type="search"] {
+    width: 380px;
+    font-size: 12px; }
+  header .buscador input[type="submit"] {
+    width: 120px;
+    top: 2px; }
+  header .redes {
+    display: none; } }
+
+@media (max-width: 768px) {
+  header .logo {
+    width: 70px;
+    height: 40px; }
+  header .buscador input[type="search"] {
+    width: 180px;
+    font-size: 12px;
+    border-radius: 30px 30px 30px 30px; }
+  header .buscador input[type="submit"] {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .mainIndex {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%; }
+    .mainIndex aside {
+      margin-top: 75px; }
+      .mainIndex aside div {
+        margin-top: 0px;
+        margin-bottom: 500px; } }
+
+@media (max-width: 360px) {
+  .mainIndex aside {
+    margin: 0%;
+    justify-content: space-around; }
+    .mainIndex aside div {
+      transform: scale(0.55); } }
+
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+    background-color: #e90303;
+    min-height: 200px; }
+    .menu ul {
+      flex-direction: column; }
+      .menu ul li {
+        border-bottom: 1px solid white;
+        border-right: none; } }
+
+@media (max-width: 768px) {
+  .secProducts div {
+    grid-template-columns: auto; } }
+
+@media (max-width: 768px) {
+  footer ul {
+    padding-left: 0%; }
+    footer ul li {
+      font-size: 12px;
+      transform: scale(0.7); }
+  footer .divFooter1 h4 {
+    font-size: 12px; }
+  footer .redes2 {
+    transform: scale(0.7); }
+    footer .redes2 a {
+      margin-right: 0%; }
+    footer .redes2 h3 {
+      font-size: 12px;
+      text-align: center;
+      margin-right: 15px; } }
+
+@media (max-width: 768px) {
+  .formAcceso p {
+    height: auto; } }
+
+@media (max-width: 768px) {
+  .mainAyuda {
+    display: grid;
+    grid-template-columns: 100%; }
+    .mainAyuda .formContact {
+      width: 80%; } }
+
+@media (max-width: 768px) {
+  .quienesSomos {
+    width: 80%; } }
